@@ -9,9 +9,44 @@
       href="../../lesson-13/project/public/icons/react.png"
       type="image/x-icon"
     />
+    <script src="./scripts/app.js" defer></script>
     <title>Blog</title>
   </head>
   <body>
+    <div id="modal">
+      <form action="" class="modal-form">
+        <fieldset id="close" class="close">
+          <div class="x-wrapper">X</div>
+        </fieldset>
+        <fieldset class="modal-form__input-wrapper">
+          <label class="modal-form__label" for="email">Email</label>
+
+          <input
+            class="modal-form__input"
+            id="email"
+            placeholder="E-mail"
+            type="text"
+          />
+        </fieldset>
+
+        <fieldset class="modal-form__input-wrapper">
+          <label class="modal-form__label" for="password">Password</label>
+
+          <input
+            class="modal-form__input"
+            placeholder="Password"
+            type="password"
+          />
+        </fieldset>
+
+        <div class="button-wrapper">
+          <button class="button">Close hucking advert</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="background"></div>
+
     <div id="app">
       <header class="header">
         <div class="logo-wrapper">
@@ -28,11 +63,69 @@
         </div>
 
         <nav class="nav">
-          <a href="./pages/login.html">Register / Login</a>
+          <a href="#" id="nav-link">Register / Login</a>
         </nav>
       </header>
 
-      <main class="main"></main>
+      <main class="main">
+        <div class="main__article">
+          <h1 class="main__title">Crazy parrot still alive</h1>
+
+          <p class="main__paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,
+            similique atque, aut sequi sint modi adipisci suscipit aspernatur
+            labore quas ab. Assumenda dolorum, neque, voluptates rem molestias
+            qui eligendi minus laboriosam alias aperiam expedita voluptatem.
+            Veritatis quisquam pariatur, quae at laudantium aperiam aspernatur
+            harum incidunt? Laborum, quae natus! Quasi quibusdam quidem, tenetur
+            commodi voluptatibus iure sequi.
+          </p>
+        </div>
+
+        <div class="main__article">
+          <h1 class="main__title">Penguin beggin to fly</h1>
+
+          <p class="main__paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,
+            similique atque, aut sequi sint modi adipisci suscipit aspernatur
+            labore quas ab. Assumenda dolorum, neque, voluptates rem molestias
+            qui eligendi minus laboriosam alias aperiam expedita voluptatem.
+            Veritatis quisquam pariatur, quae at laudantium aperiam aspernatur
+            harum incidunt? Laborum, quae natus! Quasi quibusdam quidem, tenetur
+            commodi voluptatibus iure sequi.
+          </p>
+        </div>
+
+        <div class="main__article">
+          <h1 class="main__title">Generation of idiots from tik-tok rec...</h1>
+
+          <p class="main__paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,
+            similique atque, aut sequi sint modi adipisci suscipit aspernatur
+            labore quas ab. Assumenda dolorum, neque, voluptates rem molestias
+            qui eligendi minus laboriosam alias aperiam expedita voluptatem.
+            Veritatis quisquam pariatur, quae at laudantium aperiam aspernatur
+            harum incidunt? Laborum, quae natus! Quasi quibusdam quidem, tenetur
+            commodi voluptatibus iure sequi.
+          </p>
+        </div>
+
+        <div class="main__article">
+          <h1 class="main__title">
+            It was very polite of you to say thank you , teacher!
+          </h1>
+
+          <p class="main__paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,
+            similique atque, aut sequi sint modi adipisci suscipit aspernatur
+            labore quas ab. Assumenda dolorum, neque, voluptates rem molestias
+            qui eligendi minus laboriosam alias aperiam expedita voluptatem.
+            Veritatis quisquam pariatur, quae at laudantium aperiam aspernatur
+            harum incidunt? Laborum, quae natus! Quasi quibusdam quidem, tenetur
+            commodi voluptatibus iure sequi.
+          </p>
+        </div>
+      </main>
       <footer class="footer"></footer>
     </div>
   </body>

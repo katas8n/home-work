@@ -15,9 +15,15 @@ li {
     list-style-type: none;
 }
 
+fieldset {
+    border: none;
+}
+
+/* * CONTENT */
 #app {
     font-family: sans-serif;
     font-size: var(--font-size-m);
+
 }
 
 .header { 
@@ -37,6 +43,121 @@ li {
 }
 
 .main {
-    height: 100vh;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: var(--padding-m);
     background: var(--main-bg);
+}
+
+.main__article {
+    color : var(--primary-text);
+    padding: var(--padding-m) var(--padding-l);
+    border: 1px solid violet;
+
+}
+
+.main__title {
+    text-decoration: underline;
+    font-size: var(--font-size-m);
+}
+
+.main__paragraph {
+    color:  var(--secondary-text);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: var(--font-size-s);
+}
+
+.footer {
+    padding: var(--padding-m);
+    background: var(--primary-bg);
+}
+
+/* TODO : background */
+
+#background {
+    height: 100vh;
+    width: 100vw;
+    background: var(--main-bg);
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+
+}
+
+/* TODO : modal */
+#modal {
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    height: 40%;
+    background: var(--primary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    color: var(--secondary-text);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 7px 8px 7px rgb(0, 205, 255);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.close {
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.x-wrapper {
+    transition: 300ms ease;
+}
+
+.x-wrapper:hover {
+    transform: rotate(180deg);
+}
+
+.modal-form {
+    width: 100%;
+}
+
+.modal-form__input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-s) 0; 
+}
+
+.modal-form__label {
+    font-size: var(--font-size-m);
+}
+
+.modal-form__input {
+    background: inherit;
+    border: none;
+    border-bottom: 2px solid var(--primary-text);
+    outline: none;
+    font-size: var(--font-size-m);
+    
+}   
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--margin-m);
+}
+
+.button {
+    border: 2px solid var(--primary-text);
+    background: inherit;
+    padding: var(--padding-s) 5rem;
+    font-size: var(--font-size-m);
+    color: rgb(0, 205, 255);
+    cursor: pointer;
+    transition: 400ms ease-in-out ;
+} 
+
+.button:hover {
+    color: rgb(94, 223, 255);
+    box-shadow: 5px 7px 5px rgb(0, 170, 255);
 }
