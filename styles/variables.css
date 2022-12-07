@@ -1,0 +1,28 @@
+:root {
+    /* BG */
+    --primary-bg : linear-gradient(darkcyan , fuchsia);
+    --secondary-bg : fuchsia ;
+    --main-bg : rgb(35, 35, 35) ;
+
+    /* color */
+    --primary-text : aliceblue;
+    --secondary-text : whitesmoke;
+    
+    /* margin */
+    --margin-xl : 3rem;
+    --margin-l : 2rem;
+    --margin-m : 1.4rem;
+    --margin-s : 1rem;
+
+    /* padding */
+    --padding-xl : 3rem;
+    --padding-l : 2rem;
+    --padding-m : 1.4rem;
+    --padding-s : 1rem;
+
+    /* fs */
+    --font-size-xl : 3rem;
+    --font-size-l : 2rem;
+    --font-size-m : 1.4rem;
+    --font-size-s : 1rem;
+}
